@@ -1,0 +1,8 @@
+[build]
+  command = "node ./bin/build-cmd.js && hexo generate"
+[context.production]
+  environment = { NODE_VERSION = "8" }
+[[redirects]]
+  from = "/:slug/images/:img"
+  to = "/images/:img"
+  force = true
